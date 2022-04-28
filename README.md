@@ -151,3 +151,17 @@ Delete the branch remotely:
 ## FATAL / CANNOT PUSH TO GITHUB (LIKELY A PROXY ISSUE):
 
 `git config --global --unset http.proxy && git config --global --unset https.proxy`
+
+## CONFIGURE GIT TO USE YOUR PREFERRED TEXT EDITOR:
+
+Atom:
+
+`git config --global core.editor "atom --wait"`
+
+Sublime Text:
+
+`git config --global core.editor "subl -n -w"`
+
+Visual Studio Code:
+
+`git config --global core.editor "code --wait"`
