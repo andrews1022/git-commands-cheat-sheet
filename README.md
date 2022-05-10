@@ -2,57 +2,67 @@
 
 A list of git commands and some example command chains for increased productivity
 
-## CLONE REMOTE REPO:
+## Cloning
 
-`git clone [GIT_LINK] [FOLDER_NAME]`
+`git clone [GIT_LINK]`
 
-## ADD ALL + COMMIT + PUSH TO REMOTE:
+## Pushing
 
-`git add . && git commit -m 'MESSAGE_HERE' && git push -u origin main`
+Push and remember branch:
 
-## ADD & COMMIT SHORTHAND + PUSH TO REMOTE:
+`git push -u origin [BRANCH_NAME]`
 
-`git commit -am 'MESSAGE_HERE' && git push -u origin main`
+Push to remembered branch:
 
-This only works on currently tracked files. If you have created any new files on the current commit, you must use the long version:
+`git push [BRANCH_NAME]` or simply `git push`
 
-`git add . && git commit -m 'MESSAGE_HERE'`
+## Workflow
 
-## PUSH AND REMEMBER BRANCH
+Add, commit, and push:
 
-`git push -u origin main`
+`git add . && git commit -m 'MESSAGE_HERE' && git push`
 
-## PUSH TO REMEMBERED BRANCH
+Shorthand:
 
-`git push main`
+`git commit -am 'MESSAGE_HERE' && git push`
 
-or
+Note: This only works on currently tracked files. If you have created any new files on the current commit, you must use the long version:
 
-`git push`
+`git add . && git commit -m 'MESSAGE_HERE' && git push`
 
-## GIT COMMIT TITLE & DESCRIPTION
+## Commits
+
+Basic commit message:
+
+`git commit -m 'MESSAGE_HERE'`
+
+Commit with a title and description:
 
 `git commit -m 'TITLE_HERE' -m 'DESCRIPTION_HERE'`
 
-## VIEW LOCAL BRANCHES:
+## Branches
+
+View local branches:
 
 `git branch`
 
-## VIEW REMOTE BRANCHES:
+View remote branches:
 
 `git branch -r`
 
-## GET LATEST FROM REMOTE BRANCH:
-
-`git pull origin [BRANCH_NAME]`
-
-## GET REMOTE BRANCH CURRENTLY NOT ON LOCAL:
+Get remote branch currently not on local:
 
 `git switch [BRANCH_NAME]`
 
-## SWITCH TO DIFFERENT LOCAL BRANCH:
+Switch to different local branch
 
 `git checkout [BRANCH_NAME]`
+
+## Pulling
+
+Get the latest from a remote branch:
+
+`git pull origin [BRANCH_NAME]`
 
 ## CREATE NEW BRANCH BASED OF EXISTING BRANCH (eg. main)
 
